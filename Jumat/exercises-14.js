@@ -1,6 +1,23 @@
 function mengelompokkanAngka(arr) {
     // you can only write your code here!
+var newArray = [[],[],[]];
+var i = 0;
+
+for (i; i<arr.length; i++) {
+  var dif = arr[i];
+
+  if (arr[i] % 3 == 0) {
+    newArray[2].push(dif); 
+  } 
+
+  else if (arr[i]%2 == 0) {
+    newArray[0].push(dif); } 
+  else {
+    newArray[1].push(dif); }
+    }
+  return newArray;
 }
+
 
   // TEST CASES
   console.log(mengelompokkanAngka([2, 4, 6])); // [ [2, 4], [], [6] ]

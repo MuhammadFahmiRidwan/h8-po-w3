@@ -1,5 +1,23 @@
 function groupAnimals(animals) {
     // you can only write your code here!
+  var arrAnimals = []
+
+  for ( var i = 0; i < animals.length; i++) {
+
+    var res = []
+    var charHewan = animals[i][0]
+    var hewan = animals[i]
+    
+    for ( var j = animals.length - 1; j > i; j--) {
+      if ( charHewan === animals[j][0]) {
+        hewan = hewan + ", " + animals[j]
+        animals.splice(j, 1)
+      }
+    }
+    res.push(hewan)
+    arrAnimals.push(res)
+  }
+  return arrAnimals
 }
 
   // TEST CASES
