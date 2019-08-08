@@ -1,25 +1,25 @@
 function tentukanDeretGeometri(arr) {
-// you can only write your code here!
-var dif1, dif2 = 0
-var modResult = []
-var result
+    // you can only write your code here!
+    var dif1, dif2 = 0
+    var modResult = []
+    var result
 
-dif1 = arr[0]
-dif2 = arr[1]
+    dif1 = arr[0]
+    dif2 = arr[1]
 
 
-for (var i = 1; i < arr.length ; i++) {
-    var res = arr[i]%dif2
-    modResult.push(res)
-}
-for (var i = 0; i < modResult.length; i++) {
-    if (modResult[i] === 0) {
-        result = true
+    for (var i = 1; i < arr.length ; i++) {
+        var res = arr[i]%dif2
+        modResult.push(res)
     }
-    else {
-        result = false
-        break
-    }
+    for (var i = 0; i < modResult.length; i++) {
+        if (modResult[i] === 0) {
+            result = true
+        }
+        else {
+            result = false
+            break
+        }
     }
     return result
 }
