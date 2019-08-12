@@ -82,6 +82,126 @@ OUTPUT:
 
 
 // Write code here
+function infoAgustus(day, week){
+  var tanggal = 0;
+  var bulan = 'agustus';
+  var tahun = 2019;
+    if (week == 1) {
+      if(day == 'Kamis'){
+        tanggal = 1;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Jumat'){
+        tanggal = 2;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Sabtu'){
+        tanggal = 3;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' adalah hari libur weekend';
+      } else {
+        return 'Input hari harus dalam bahasa Indonesia atau Inggris yang benar';
+      }
+    } else if (week == 2) {
+      if(day = 'Minggu'){
+        tanggal = 4;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' adalah hari libur weekend';
+      } else if (day == 'Senin'){
+        tanggal = 5;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Selasa'){
+        tanggal = 6;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Rabu'){
+        tanggal = 7;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Kamis'){
+        tanggal = 8;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Jumat'){
+        tanggal = 9;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Sabtu'){
+        tanggal = 10;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' adalah hari libur weekend';
+      } else {
+        return 'Input hari harus dalam bahasa Indonesia atau Inggris yang benar';
+      }
+    } else if (week == 3) {
+      if(day == 'Minggu'){
+        tanggal = 11;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' adalah hari libur weekend dan juga tanggal merah'
+      } else if (day == 'Senin'){
+        tanggal = 12;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Selasa'){
+        tanggal = 13;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Rabu'){
+        tanggal = 14;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Kamis' || day == 'Thursday'){
+        tanggal = 15;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Jumat'){
+        tanggal = 16;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Sabtu'){
+        tanggal = 17;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' adalah hari libur weekend dan juga tanggal merah'
+      } else {
+        return 'Input hari harus dalam bahasa Indonesia atau Inggris yang benar';
+      }
+    } else if (week == 4) {
+      if(day == 'Minggu'){
+        tanggal = 18;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' adalah hari libur weekend';
+      } else if (day == 'Senin'){
+        tanggal = 19;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Selasa'){
+        tanggal = 20;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Rabu'){
+        tanggal = 21;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Kamis'){
+        tanggal = 22;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Jumat'){
+        tanggal = 23;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Sabtu'){
+        tanggal = 24;
+      } else {
+        return 'Input hari harus dalam bahasa Indonesia atau Inggris yang benar';
+      }
+    }  else if (week == 5) {
+      if(day == 'Minggu'){
+        tanggal = 25;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' adalah hari libur weekend';
+      } else if (day == 'Senin'){
+        tanggal = 26;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Selasa'){
+        tanggal = 27;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Rabu'){
+        tanggal = 28;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Kamis'){
+        tanggal = 29;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Jumat'){
+        tanggal = 30;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' bukan hari libur';
+      } else if (day == 'Sabtu'){
+        tanggal = 31;
+        return 'Hari '+ day + ', '+tanggal+' '+bulan+' '+tahun+' adalah hari libur weekend';
+      } else {
+        return 'Input hari harus dalam bahasa Indonesia atau Inggris yang benar';
+      }
+  }  else if(week < 1 || week > 5){
+    return 'range 1 - 5'
+  }
+}
 
 
 
