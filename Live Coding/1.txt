@@ -1,0 +1,59 @@
+/* 
+==============
+Bilangan Prima
+==============
+​
+Bilangan prima merupakan bilangan yang hanya habis dibagi oleh angka 1 dan angka itu sendiri.
+Buat algoritma DAN pseudocode untuk mengecek apakah sebuah angka merupakan angka prima atau bukan.
+ */
+​
+// Tulis algoritma di sini
+1. Tampung nilai bebas kedalam variabel number
+
+2. Tampung nilai boolean pada variabel prime
+
+3. buat perulangan dengan variabel i diberi nilai "2", i kurang dari number, tambahkan 1. lanjut step 4
+ 
+4. jika number habis dibagi dengan nilai i, maka prime akan bernilai benar dan jika tidak maka prime akan bernilai salah.
+
+5. jika prime adalah salah maka akan menampilkan "ini bukan bilangan prima", jika prime adalah benar maka akan menampilkan "ini bilangan prima"
+
+tampilkan num
+​
+// Tulis pseudocode di sini
+
+STORE "number" with any value
+STORE "prime" with true  
+
+FOR "i" equal to "2"; "i" less then number; "i" added by 1
+    IF "number" MODULUS "i" equals to "0" 
+    SET prime equal to false
+    ELSE
+    SET prime equal ro true
+
+IF prime equals to false
+    DISPLAY "ini bukan bilangan prima"
+ELSE IF prime equals to true
+    DISPLAY "ini bilangan prima"
+
+var number = 50
+
+var prime = true
+
+for ( var i = 2; i < number; i++ ) {
+    if (number % i == 0) {
+        prime = false
+    }
+    else {
+        prime = true
+    }
+    console.log(i)
+    console.log(prime)
+}
+if ( prime === false) {
+    console.log("ini bukan bilangan prima")
+}
+else if(prime === true) {
+    console.log("ini bilangan prima")
+}
+
