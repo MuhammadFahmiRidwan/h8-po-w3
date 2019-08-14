@@ -5,31 +5,29 @@ var input = [
     ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
 
-function dataHandling(){
-for(i = 0; i < input.length; i++){
-    for(j = 0; j < input[i].length; j++) {
-        if( j == 0){
-        console.log("ID", input[i][j])
-        }  
-        else if( j == 1) {
-            console.log("Nama Lengkap", input[i][j]) 
+function dataHandling(arr){
+    for ( var i = 0; i < arr.length; i++) {
+        for ( var j = 0; j < arr[i].length; j++) {
+            // console.log(arr[i][0])
+            if (arr[i][j] == arr[i][0]){
+                console.log( " ID: " + arr[i][j])
+            }
+            else if (arr[i][j] == arr[i][1]) {
+                console.log( " Nama Lengkap: " + arr[i][j])
+            }
+            else if (arr[i][j] == arr[i][2]) {
+                console.log( " TTL: " + arr[i][j] + " " + arr[i][j+1])
+            }   
+            else if (arr[i][j] == arr[i][4]){
+                console.log( " Hobi: " + arr[i][j])
+            }
         }
-        else if( j == 2) {
-            console.log("TTL", input[i][j]) 
-        }
-        else if( j == 3) {
-            console.log("Alamat", input[i][j]) 
-        }
-        else if( j == 4) {
-            console.log("Hobi", input[i][j])
-        }
-        }
-        if(i != input.length-1)
-        console.log(" ")
+        console.log("\n")
     }
-    
 }
 
 
-dataHandling()
+dataHandling(input)
+
+// buatlah function agar terima 1 parameter
 

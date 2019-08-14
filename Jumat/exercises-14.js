@@ -1,19 +1,18 @@
 function mengelompokkanAngka(arr) {
     // you can only write your code here!
 var newArray = [[],[],[]];
-var i = 0;
 
-for (i; i<arr.length; i++) {
+for (var i = 0; i<arr.length; i++) {
   var dif = arr[i];
 
   if (arr[i] % 3 == 0) {
     newArray[2].push(dif); 
   } 
-
   else if (arr[i]%2 == 0) {
     newArray[0].push(dif); } 
   else {
     newArray[1].push(dif); }
+    console.log(arr[i])
     }
   return newArray;
 }
