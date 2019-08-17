@@ -7,23 +7,12 @@ var input = [
 
 function dataHandling(arr){
     for ( var i = 0; i < arr.length; i++) {
-        for ( var j = 0; j < arr[i].length; j++) {
-            // console.log(arr[i][0])
-            if (arr[i][j] == arr[i][0]){
-                console.log( " ID: " + arr[i][j])
-            }
-            else if (arr[i][j] == arr[i][1]) {
-                console.log( " Nama Lengkap: " + arr[i][j])
-            }
-            else if (arr[i][j] == arr[i][2]) {
-                console.log( " TTL: " + arr[i][j] + " " + arr[i][j+1])
-            }   
-            else if (arr[i][j] == arr[i][4]){
-                console.log( " Hobi: " + arr[i][j])
-            }
+                console.log( " ID: " + arr[i][0])
+                console.log( " Nama Lengkap: " + arr[i][1])
+                console.log( " TTL: " + arr[i][2])
+                console.log( " Hobi: " + arr[i][3])
+                console.log("\n")
         }
-        console.log("\n")
-    }
 }
 
 
