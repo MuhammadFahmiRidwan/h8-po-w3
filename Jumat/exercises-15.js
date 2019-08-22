@@ -1,19 +1,35 @@
 function groupAnimals(animals) {
     // you can only write your code here!
-    var abjad = "abcdefghijklmnopqrstuvwxyz"
-    var result = []
-
-  for ( var i = 0; i < abjad.length; i++) {
-    var temp = []
-    for ( var j = 0; j < animals.length; j++) {
-      if (abjad[i] === animals[j][0]){
-        temp.push(animals[j])
+    var arr=[];
+    var tampung = ""
+  
+    for(var i=0;i<animals.length;i++) {
+      for(var j=0;j<animals.length-i;j++) {
+        if(animals[j]>animals[j+1]) {
+          tampung = animals[j]
+          animals[j] = animals[j+1]
+          animals[j+1]=tampung
+        }
       }
     }
-    if (temp != "")
-    result.push(temp)
-  }
-  return result
+  
+    for (var i=0; i<animals.length; i++){
+      var found = false;
+      
+      for(var j=0; j<arr.length; j++){
+        if(arr[j][0][0]===animals[i][0]){
+          arr[j].push(animals[i]);
+          found =  true;
+          break;
+        }
+      }
+  
+      if(!found){
+        arr.push([animals[i]]);
+      }
+    }
+  
+    return arr; 
 }
 
   // TEST CASES
