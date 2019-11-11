@@ -1,17 +1,5 @@
 function palindrome(kata) {
     // you can only write your code here!
-    var temp = ""
-
-    for ( var i = kata.length - 1; i >= 0; i--) {
-        temp += kata[i]
-        console.log(kata[i])
-    }
-    if ( temp === kata) {
-        return true
-    }
-    else {
-        return false
-    }
 }
 
   // TEST CASES

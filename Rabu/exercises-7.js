@@ -1,13 +1,6 @@
 
 function hitungJumlahKata(kalimat) {
     // you can only write your code here!
-    var temp = 1;
-    for(var i = 0; i < kalimat.length; i++){
-        if (kalimat[i] === " ") {
-            temp++;
-        }
-    }
-    return temp
 }
 
 // TEST CASES

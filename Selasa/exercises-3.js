@@ -6,13 +6,6 @@ var input = [
 ]
 
 function dataHandling(arr){
-    for ( var i = 0; i < arr.length; i++) {
-                console.log( " ID: " + arr[i][0])
-                console.log( " Nama Lengkap: " + arr[i][1])
-                console.log( " TTL: " + arr[i][2])
-                console.log( " Hobi: " + arr[i][3])
-                console.log("\n")
-        }
 }
 
 

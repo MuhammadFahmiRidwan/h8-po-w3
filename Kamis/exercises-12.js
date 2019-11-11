@@ -1,17 +1,5 @@
 function tentukanDeretGeometri(arr) {
     // you can only write your code here!
-    var dif = arr[1] / arr[0] 
-
-    for ( var i = arr.length-1; i >= 0; i--) {
-        console.log(arr.length-1)
-        if (i != arr.length-1){
-            var result = arr[i+1] / arr[i]
-            if (result != dif){
-            return false
-            }
-        }    
-    }
-    return true
 }
 
 // TEST CASES

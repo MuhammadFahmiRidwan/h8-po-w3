@@ -1,13 +1,5 @@
 function tentukanDeretAritmatika(arr) {
 // you can only write your code here!
-  var dif1 = arr[1] - arr[0]
-  for (var i = 0; i < arr.length - 1; i++) {
-      var dif2 = arr[i + 1] - arr[i]
-      if (dif1 != dif2) {
-          return false
-        }
-    }
-return true
 }
 
 // TEST CASES

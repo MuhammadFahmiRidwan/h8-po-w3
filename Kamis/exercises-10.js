@@ -1,16 +1,5 @@
 function perkalianUnik(arr) {
     // you can only write your code here!
-    var temp = [];
-    for(var i = 0; i < arr.length; i++) {
-        var numbers = 1;
-        for(var j = 0; j < arr.length; j++) {
-        if(j !== i) {
-            numbers *= arr[j];
-        }  
-        }
-        temp.push(numbers);
-        }
-        return temp;
 }
 
   // TEST CASES
