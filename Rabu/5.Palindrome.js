@@ -3,7 +3,7 @@
 function palindrome(kata) {
     // you can only write your code here!
     let temp = ''
-    for (let i = kata.length; i >= 0; i--) {
+    for (let i = kata.length-1; i >= 0; i--) {
         if (kata[i] != undefined){
           temp += kata[i]
         }
