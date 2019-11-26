@@ -22,7 +22,7 @@ function mengelompokkanAngka(arr) {
         temp2.push(arr[i])
       }
     }
-    result.push(temp1,temp2,temp3)
+    result.push(temp3,temp2,temp1)
     return result
 }
 

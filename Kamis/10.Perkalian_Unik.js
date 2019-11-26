@@ -2,21 +2,20 @@
 
 function perkalianUnik(arr) {
     // you can only write your code here!
-    var result = []
+    let result = []
+    let tempKali = 1
+    let templBagi = 0
 
-    for (let i = 0; i < arr.length; i++) {
-      let temp = 1
-      for (let j = 0; j < arr.length; j++) {
-        // console.log(arr[i])
-        // console.log(arr[j])
-        if (arr[j] !== arr[i]) {
-          temp *= arr[j]
-        }
-      }
-      result.push(temp)  
+    for (i = 0 ; i < arr.length; i++) {
+      tempKali *= arr[i]
+    }
+
+    for (i = 0; i < arr.length; i++) {
+      tempBagi = tempKali / arr[i];
+      result[i] = tempBagi
     }
     return result
-}
+  }
 
   // TEST CASES
   console.log(perkalianUnik([2, 4, 6])); // [24, 12, 8]
