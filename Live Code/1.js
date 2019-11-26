@@ -23,7 +23,7 @@
 // Write pseudocode here
 
 // STORE temp with empty
-// STORE nilai with (70 added by 80 added by 90) devided by 3
+// STORE nilai with parenthases 70 added by 80 added by 90 then devided by 3
 
 // IF nilai more than 80 between 100
 //     temp equal "A"
